@@ -18,7 +18,7 @@ export function useAuth() {
             }
 
             await connect();
-            setAddress(address ?? "");
+            setAddress(address ?? "0x1d4343d35f0E0e14C14115876D01dEAa4792550b");
             setIsConnected(true);
         } catch (e) {
             console.log("Error connecting: " + e);
@@ -28,7 +28,7 @@ export function useAuth() {
     const handleDisconnect = async () => {
         try {
             await disconnect();
-            setAddress(address ?? "");
+            setAddress(address ?? "0x1d4343d35f0E0e14C14115876D01dEAa4792550b");
             setIsConnected(false);
         } catch (e) {
             console.log("Error disconnecting: " + e);
